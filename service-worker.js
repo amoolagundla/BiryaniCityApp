@@ -9,7 +9,7 @@ self.addEventListener('activate', (event) => {
   // While there is only one cache in this example, the same logic will handle the case where
   // there are multiple versioned caches.
   const expectedCacheNames = Object.keys(CURRENT_CACHES).map((key) => {
-    return CURRENT_CACHES[key]; 
+    return CURRENT_CACHES[key];
   });
 
   event.waitUntil(
